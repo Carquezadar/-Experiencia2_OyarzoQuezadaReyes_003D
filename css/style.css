@@ -1,0 +1,318 @@
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* Body */
+/* Clase de background con vídeo */
+.body-i{
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  
+    position: fixed;    
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+        
+    z-index: -100;
+
+    background-size: cover;
+    opacity: 0.6;
+}
+/* -----------*/
+
+
+/* --- Menú de todas las páginas --- */
+nav.navbar {
+    background-color: #ffffff !important;
+}
+.menuA{
+    text-align: center !important;
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-family: Arial, Helvetica, sans-serif im !important;
+    margin-left: 20px !important;
+}
+
+.logo-nav{
+    width: 120px;
+    height: 80px;
+}
+
+.headertrans{
+    opacity: 0.9;
+}
+/* -----------*/
+
+
+/* --- Videos en general --- */
+video{
+    width: 100%;
+    height: 100%;
+}
+/* -----------*/
+
+
+/* --- Textos en general --- */
+a{
+    text-align: center !important;
+    color: #000000 !important;
+    text-decoration: none !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+a:hover{
+    color: #3e2665 !important;
+    transition: 0.5s !important;
+}
+
+h1{
+    text-align: center !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Dela Gothic One', cursive !important;
+    font-size: 35px !important;
+    color: #000000;
+}
+/* -----------*/
+
+
+/* --- Card index --- */
+.card1{
+    border-radius: 20px !important;
+    box-shadow: 0 2px 2px rgb(102, 76, 163) !important;
+    overflow: hidden !important;
+    margin: 0px !important;
+    text-align: center !important;
+    transition: all 0.25s !important;
+}
+
+.card1:hover{
+    
+    box-shadow: 0 12px 16px rgb(102, 76, 163) !important;
+}
+
+.card{
+    border-radius: 20px !important;
+}
+/* -----------*/
+
+
+/* --- Quienes somos --- */
+.info{
+    text-align: center;
+    color: #000000;
+}
+
+.quienessomosimg{
+    height: 100px;
+    width: 100px;
+}
+
+.enlace{
+    color: #0084ff !important;
+    text-decoration: none;
+    border-left: 0px !important;
+}
+
+.enlace:hover{
+    color:#3e2665;
+    transition: 0.5s;
+}
+
+.imgequipo{
+    border-radius: 20px !important;
+    height: 300px;
+    width: 300px;
+}
+
+.infoequipo{
+    padding-left: 30px;
+    padding-top: 0px;
+}
+/* -----------*/
+
+
+/* --- Barra de descuento shop ---*/
+.barrita{
+    top: 100px;
+    direction: left;
+    background: #c501c5;
+}
+
+.logito{
+    display: inline-block; 
+    position: relative; 
+    top: 0px;
+}
+
+.imagen-logo{
+    max-height: 60px;
+}
+
+strong{
+    color: #ffffff;
+}
+/* -----------*/
+
+
+/* --- Card Shop ---*/
+*{
+    box-sizing: border-box !important;
+}
+
+.wrapper-1{
+    display: flex !important;
+    width: 70% !important;
+    justify-content: space-around !important;
+}
+
+.card-1{
+    width: 280px !important;
+    height: 360px !important;
+    padding: 2rem 1rem !important;
+    background: #ffffff !important;
+    position: relative !important;
+    display: flex !important;
+    align-items: flex-end !important;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5) !important;
+    transition: 0.5s ease-in-out !important;
+}
+ 
+.card-1:hover{
+    transform: translateY(20px) !important;
+}
+
+.card-1:before{
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    background:  linear-gradient(to bottom, rgba(195, 0, 100, 0.5), rgba(195, 0, 226, 1)) !important;
+    z-index: 2 !important;
+    transition: 0.5s all !important;
+    opacity: 0 !important;
+}
+
+.card-1:hover:before{
+    opacity: 1 !important;
+}
+
+.card-1 img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.card-1 .info-1{
+    position: relative !important;
+    z-index: 3 !important;
+    color: #ffffff !important;
+    opacity: 0 !important;
+    transform: translateY(30px) !important;
+    transition: 0.5s all !important;
+}
+
+.card-1:hover .info-1{
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+}
+
+.card-1 .info-1 h1{
+    margin: 0;
+    font-size: 20px !important;
+}
+
+.card-1 .info-1 p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.card-1 .info-1 .btn-1{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #ffffff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.card-1 .info-1 .btn-1:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+/* -----------*/
+
+
+/* Body */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* Footer */
+.footer{
+    padding-bottom: 1px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-div{
+    background-color: #181818;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 0;
+    border-right: 0;
+}
+
+.footer-div1 p{
+    background-color: #000000;
+    padding-top: 10px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.img-github{
+    margin-left: 0px;
+}
+
+.img-instagram{
+    margin-left: 10px;
+}
+
+.img-youtube{
+    margin-left: 10px;
+}
+/* Footer */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
