@@ -300,19 +300,49 @@ strong{
 /* --------------------------------------------------------------------- */
 /* --------------------------------------------------------------------- */
 
+/* -----------Formulario------ */
+
+.formulario-container{
+    background-color: #ffffff00 !important;
+    border-radius: 20px !important;
+    padding: 10px !important;
+    padding-bottom: 75px !important;
+}
+
+.formulario-container label{
+    color: #000000 !important; 
+    font-family: 'Itim', cursive;
+    font-size: 22px;
+}
+
+.formulario-container h1{
+    color: #ffffff !important;
+    font-family: 'Goblin One', cursive;
+}
+
+.formulario-container input{
+    border-radius: 20px !important;
+    border-color: #641c34 !important;
+    font-size: 20px !important;
+}
+
+.botonFormularioLimpiar{
+    background-color: #641c34;
+    border: none;
+    color:#ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    border-left: 200px;
+    float: left;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.botonFormulario {
+    background-color: #000000;
+    border: none;
+    color:#ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    border-left: 200px;
+    float: right;
+}`
