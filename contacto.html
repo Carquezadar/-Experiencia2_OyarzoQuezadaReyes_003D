@@ -12,6 +12,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
         <title>All Stars - Comentarios</title>
         <link rel="icon" href="img/head-logo.png">
+        <script src="js/validaciones.js"></script>
+        
     </head>
 
     <!-- Cuerpo de la página (lo visible) -->
@@ -37,13 +39,16 @@
                 </div>
             </nav>
         </header>
+
+        <br><br>
+
         <div class="container cajaContacto contacto-container">
             <div class="row">
                 <div class="col-md">
                     <span class="tituloContacto" id="highlight"><h2>CONTACTO</h2>
                         <h2 class="tituloContacto2">ALL STARS</h2></span>
                         <br>
-                        <p><img src="img/computador.png" class="imgContacto"> Servicio completamente on-line <br><br><img src="img/telefono.png" class="imgContacto"> <h7 onmouseover="style.color = 'black'" onmouseout="style.color= '#990000'" class="numeroTele">+56 9 74110962</h7><br><br><img src="img/Interrogacion.png" class="imgContacto"> Cualquier problema relacionado con la pagina o informacion que necesie contactenos</p>
+                        <p><img src="img/computador.png" class="imgContacto"> Servicio completamente on-line <br><br><img src="img/telefono.png" class="imgContacto"> <h7 onmouseover="style.color = 'black'" onmouseout="style.color= '#990000'" class="numeroTele">+56 9 74110962</h7><br><br><img src="img/Interrogacion.png" class="imgContacto"> Cualquier problema relacionado con la página o información que necestie contáctenos</p>
                     
                 </div>
                 
@@ -61,7 +66,7 @@
                         <input type="text" name="ed" id="edad" placeholder="Digite su edad" class="form-control">
                         <br>
             
-                        <label for="opcion">Juego:</label>
+                        <label for="opcion">Motivo de Consulta:</label>
                         <select id="opcion" name="opcion" class="form-control">
                             <option value="">- Selecciona una opción -</option>
                             <option value="1">Reclamo</option>
@@ -83,10 +88,78 @@
                 </div>
             </div>
         </div>
-        
+
+
+
+
+
+
         <br><br>
 
         <br><br>
+<!-- Script colores -->
+        <script>
+            // ********** cambia aquÃ­
+            var text = "CONTACTO" // tu texto
+            var speed = 80 // velocidad de movimiento 
+
+
+            if (document.all || document.getElementById) {
+                document.write('<span id="highlight">' + text + '</span>')
+                var storetext = document.getElementById ? document.getElementById("highlight") : document.all.highlight
+            } else
+                document.write(text)
+            var hex = new Array("00", "14", "28", "3C", "50", "64", "78", "8C", "A0", "B4", "C8", "DC", "F0")
+            var r = 1
+            var g = 1
+            var b = 1
+            var seq = 1
+
+            function changetext() {
+                rainbow = "#" + hex[r] + hex[g] + hex[b]
+                storetext.style.color = rainbow
+            }
+
+            function change() {
+                if (seq == 6) {
+                    b--
+                    if (b == 0)
+                        seq = 1
+                }
+                if (seq == 5) {
+                    r++
+                    if (r == 12)
+                        seq = 6
+                }
+                if (seq == 4) {
+                    g--
+                    if (g == 0)
+                        seq = 5
+                }
+                if (seq == 3) {
+                    b++
+                    if (b == 12)
+                        seq = 4
+                }
+                if (seq == 2) {
+                    r--
+                    if (r == 0)
+                        seq = 3
+                }
+                if (seq == 1) {
+                    g++
+                    if (g == 12)
+                        seq = 2
+                }
+                changetext()
+            }
+
+            function starteffect() {
+                if (document.all || document.getElementById)
+                    flash = setInterval("change()", speed)
+            }
+            starteffect();
+            </script>
         <!-- Script JQuery -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

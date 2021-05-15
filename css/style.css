@@ -136,7 +136,7 @@ h1{
 .barrita{
     top: 100px;
     direction: left;
-    background: #c501c5;
+    background: #c501c570;
 }
 
 .logito{
@@ -190,7 +190,7 @@ strong{
     display: block !important;
     width: 100% !important;
     height: 100% !important;
-    background:  linear-gradient(to bottom, rgba(195, 0, 100, 0.5), rgba(195, 0, 226, 1)) !important;
+    background:  linear-gradient(to bottom, rgba(195, 0, 100, 0.5), #c300e2) !important;
     z-index: 2 !important;
     transition: 0.5s all !important;
     opacity: 0 !important;
@@ -347,6 +347,7 @@ strong{
     float: right;
 }
 
+
 /* -----------Contacto------ */
 
 .tituloContacto{
@@ -396,3 +397,43 @@ strong{
     font-family: 'Itim', cursive;
     font-size: 22px;
 }
+
+/*-----------Caja api-----------------*/ 
+
+.cajaApi{
+    background-color: #ffffff34;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.cajaApi th{
+    color: #000000;
+
+}
+
+.cajaApi button{
+    background-color: #ac0000;
+    border: none;
+    color:#ffffff;
+    padding: 15px 32px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

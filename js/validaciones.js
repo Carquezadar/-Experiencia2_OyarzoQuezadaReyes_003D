@@ -113,3 +113,26 @@ function validacionContacto()
             var a = document.getElementById("apellido");
             a.value = a.value.charAt(0).toUpperCase()+a.value.substr (1);
         }
+
+        function dialogBox(){
+            alert('Se han limpiado correctamente los cuadros.');
+          }
+
+
+        $(document).ready(function()
+        {
+            $("#solicitar").click(function(){
+
+                $.get("https://mindicador.cl/api",
+                    function(data){
+                        
+                        $.each(data,function(i,item){
+                            $("#monedas").append("<tr><td>"+item.codigo+"</td><td>"+item.nombre +
+                            "</td><td>"+'$' +item.valor+ "</td><td>");
+                            
+
+                        });
+
+                    });
+            });
+        })
