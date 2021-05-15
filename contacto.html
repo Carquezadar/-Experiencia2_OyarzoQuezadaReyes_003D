@@ -37,7 +37,53 @@
                 </div>
             </nav>
         </header>
-
+        <div class="container cajaContacto contacto-container">
+            <div class="row">
+                <div class="col-md">
+                    <span class="tituloContacto" id="highlight"><h2>CONTACTO</h2>
+                        <h2 class="tituloContacto2">ALL STARS</h2></span>
+                        <br>
+                        <p><img src="img/computador.png" class="imgContacto"> Servicio completamente on-line <br><br><img src="img/telefono.png" class="imgContacto"> <h7 onmouseover="style.color = 'black'" onmouseout="style.color= '#990000'" class="numeroTele">+56 9 74110962</h7><br><br><img src="img/Interrogacion.png" class="imgContacto"> Cualquier problema relacionado con la pagina o informacion que necesie contactenos</p>
+                    
+                </div>
+                
+                <br><br>
+        
+                <div class="col-md">
+                    <form action="index.html" method="post" name="datos" onsubmit="return validacionContacto()">
+                        <label for="nombre">Ingrese nombre:</label>
+                        <input type="text" name="nom" id="nombre" placeholder="Digite su nombre" class="form-control"  onchange="CambiarMayusculasNombre()">
+                        <br>
+                        <label for="apellido">Ingrese apellido:</label>
+                        <input type="text" name="ape" id="apellido" placeholder="Digite su apellido" class="form-control"  onchange="CambiarMayusculasApellido()">
+                        <br>
+                        <label for="edad">Ingrese edad:</label>
+                        <input type="text" name="ed" id="edad" placeholder="Digite su edad" class="form-control">
+                        <br>
+            
+                        <label for="opcion">Juego:</label>
+                        <select id="opcion" name="opcion" class="form-control">
+                            <option value="">- Selecciona una opción -</option>
+                            <option value="1">Reclamo</option>
+                            <option value="2">Consulta</option>
+                            <option value="3">Otro</option>
+                        </select>
+                        <br>
+                        <label for="Teléfono">Número Telefónico:</label>
+                        <input type="text" name="fono" id="telefono" placeholder="Digite su teléfono" class="form-control">
+                        
+                        <br>
+                        <label for="comentarios">Comentarios/Preguntas:</label>
+                        <textarea class="form-control" rows="5" id="comentarios" name="comentarios" ></textarea>
+                        
+                        <br><br>
+                        <input class="botonContacto" type="submit" value="Enviar Datos">
+                
+                    </form>
+                </div>
+            </div>
+        </div>
+        
         <br><br>
 
         <br><br>
