@@ -345,4 +345,54 @@ strong{
     text-align: center;
     border-left: 200px;
     float: right;
-}`
+}
+
+/* -----------Contacto------ */
+
+.tituloContacto{
+    font-family: 'Dela Gothic One', cursive !important;
+    color: #000000;
+
+}
+.tituloContacto2{
+    font-family: 'Dela Gothic One', cursive !important;
+    font-size: 50px ;
+}
+
+.numeroTele{
+    font-size: 20px !important;
+}
+
+.imgSuperior{
+    border-radius: 20px !important;
+    height: 250px;
+    width: 500px;
+    
+}
+.imgContacto{
+    height: 20px;
+    width: 20px;
+    
+}
+.cajaContacto{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px !important;
+}
+.botonContacto {
+    background-color: #000000;
+    border: none;
+    color:#ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    border-left: 200px;
+    float: right;
+}
+.contacto-container{
+ background-color: #ffffff00;
+}
+.contacto-container label{
+    color: #000000 !important; 
+    font-family: 'Itim', cursive;
+    font-size: 22px;
+}
