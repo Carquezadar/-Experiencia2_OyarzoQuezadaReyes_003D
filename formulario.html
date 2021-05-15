@@ -38,6 +38,52 @@
             </nav>
         </header>
 
+        <div class="formulario-container">
+            <form id="mi-formulario" action="index.html">
+                <label>Correo Electrónico: </label>
+                <input type="text" name="email" required placeholder="nombre@dominio.cl" class="form-control">
+                <br>
+            
+                <label>Telefono: </label>
+                <input type="text" name="fono" minlength="9" required class="form-control" placeholder="1 111 111">
+                <br>
+            
+                <label>Fecha de nacimiento: </label>
+                <input type="date" name="fecha" min="1920-01-01" required class="form-control">
+                <br>
+    
+                <label>Contraseña:</label>
+                <input type="password" id="password" name="password" minlength="3" class="form-control" placeholder="Ingrese su contraseña">
+                <br>
+            
+                <label>Reingresa contraseña: </label>
+                <input type="password" name="password2" minlength="3" class="form-control" placeholder="Re-ingrese su contraseña">
+                <br>
+    
+                <label for="opcion">Juego:</label>
+                            <select id="opcion" name="opcion" class="form-control">
+                                <option value="">- Selecciona una opción -</option>
+                                <option value="1">League of legends</option> 
+                                <option value="2">Grand Theft Auto V</option>
+                                <option value="3">Fortnite</option> 
+                                <option value="4">Minecraft</option>
+                                <option value="5">Cyberpunk 2077</option> 
+                                <option value="6">Among Us</option>
+                                <option value="7">Overwatch</option> 
+                                <option value="8">CS:GO</option> 
+                                <option value="9">Call of Duty Warzone</option>
+                            </select>
+                            <br>
+    
+                <label for="comentarios">Comentarios:</label>
+                <textarea class="form-control" rows="5" id="comentarios" name="comentarios" placeholder="Agregue su comentario"></textarea>
+                <br>
+                <button class="botonFormularioLimpiar" type="reset" onclick=dialogBox()>Limpiar</button>
+                <button class="botonFormulario">Enviar</button>
+            </form>
+            </div>
+        </div>
+        
         <br><br>
         <!-- Script JQuery -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
